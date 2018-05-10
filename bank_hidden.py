@@ -39,8 +39,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random
 
 
 #show dimensions
-print X.shape
-print y.shape
 
 X_train = X_train.T
 y_train = np.reshape(y_train,(len(y_train),1))
@@ -71,7 +69,7 @@ b2 = np.zeros(shape = (1,1))
 m = y_train.shape[1]
 
 
-for i in range(0,10000):
+for i in range(0,5000):
     Z1 = np.dot(w1,X_train) + b1
     A1 = np.tanh(Z1)
     Z2 = np.dot(w2,A1) + b2
@@ -85,7 +83,8 @@ for i in range(0,10000):
     db2 = (1.0/m) * np.sum(dZ2, axis = 1, keepdims=True)
     
     #this is tanh deriv
-    dZ1 = (np.dot(w2.T,dZ2)*(1 - np.tanh(Z1)**2))
+    dA1 = (np.dot(w2.T,dZ2))
+    dZ1 = dA1*(1 - np.tanh(Z1)**2)
     
     dw1 = (1.0/m) * np.dot(dZ1,X_train.T)
     db1 = (1.0/m) * np.sum(dZ1, axis = 1, keepdims=True)
