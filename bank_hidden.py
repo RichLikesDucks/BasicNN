@@ -25,8 +25,7 @@ y = np.asarray(ylist)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 0)
 features = X_train.shape[1]
-#print y_train.shape
-#print X_train
+
 
 
 ####################################
@@ -44,18 +43,15 @@ X_train = X_train.T
 y_train = np.reshape(y_train,(len(y_train),1))
 y_train = y_train.T
 
-
-print X.shape
-print y.shape
-
-#X_test = X_test.T
-#y_test = y_test.T
+#print 'X_train shape:', X_train.shape
+#print 'y_train shape:', y_train.shape
+print 'Training size: ', len(X_train[1])
 
 
 #########
 
 #hyperparameters
-hid = 131
+hid = 20
 alpha = 0.001
 
 def sigmoid(z):
@@ -69,7 +65,7 @@ b2 = np.zeros(shape = (1,1))
 m = y_train.shape[1]
 
 
-for i in range(0,5000):
+for i in range(0,10000):
     Z1 = np.dot(w1,X_train) + b1
     A1 = np.tanh(Z1)
     Z2 = np.dot(w2,A1) + b2
@@ -107,6 +103,7 @@ A1 = np.tanh(Z1)
 Z2 = np.dot(w2,A1) + b2
 A2 = sigmoid(Z2)
 predictions = np.round(A2)
+
 
 #print predictions.T.shape
 #print y_test.T.shape
