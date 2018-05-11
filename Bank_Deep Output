@@ -1,0 +1,24 @@
+Last login: Thu May 10 20:29:25 on ttys000
+Richards-MacBook-Air:~ RPantano89$ cd Documents/Data\ Science/BasicNN/
+Richards-MacBook-Air:BasicNN RPantano89$ python Bank_Deep.py 
+Training set size:  919
+Cost after iteration 0: 3.313582
+Cost after iteration 1000: 0.314325
+Cost after iteration 2000: 0.182681
+Cost after iteration 3000: 0.135962
+Cost after iteration 4000: 0.101548
+Cost after iteration 5000: 0.074003
+Cost after iteration 6000: 0.055206
+Cost after iteration 7000: 0.043351
+Cost after iteration 8000: 0.035626
+Cost after iteration 9000: 0.030307
+Cost after iteration 9999: 0.026436
+Test Accuracy: 99.78%
+Correct: 452
+Incorrect: 1
+Richards-MacBook-Air:BasicNN RPantano89$ 
+
+
+
+
+
