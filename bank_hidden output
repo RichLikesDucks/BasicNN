@@ -1,0 +1,24 @@
+Last login: Thu May 10 20:07:33 on ttys000
+Richards-MacBook-Air:~ RPantano89$ cd Documents/Data\ Science/BasicNN/
+Richards-MacBook-Air:BasicNN RPantano89$ python bank_hidden.py 
+Training size:  919
+Cost after iteration 0: 4.208984
+Cost after iteration 1000: 0.535648
+Cost after iteration 2000: 0.194753
+Cost after iteration 3000: 0.100303
+Cost after iteration 4000: 0.070686
+Cost after iteration 5000: 0.057443
+Cost after iteration 6000: 0.048434
+Cost after iteration 7000: 0.041718
+Cost after iteration 8000: 0.036561
+Cost after iteration 9000: 0.032574
+Cost after iteration 9999: 0.029491
+Test Accuracy: 99.56%
+Correct: 451
+Incorrect: 2
+Richards-MacBook-Air:BasicNN RPantano89$ 
+
+
+
+
+
