@@ -1,5 +1,5 @@
 # BasicNN
-Basic Neural Network space where I am slowly adding projects that increase my understanding of Deep Learning 
+building and understanding the basics of neural networks
 
 bank_hidden.py:
 one hidden layer with 20 nodes using tanh and sigmoid activation functions 
